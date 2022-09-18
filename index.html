@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Credit Card Authorization</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" >
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+  <h1>Credit Card Authorization</h1>
+  <p>COMPANY NAME accepts MasterCard and Visa for payment or fees. To pay fees using a credit card, simply complete and sign this form and attatch it to your application.<br><strong>We process credit card payments upon receipt.</strong> </p>
+<hr>
+<h4>Applicant's Information</h4>
+<hr>  
+  <form action="submission.html" method="POST">
+  <div><!-- Info -->
+    <label for="lastname">LAST NAME*: 
+    <input id="lastname" name="lastname" type="text" required pattern="[a-zA-Z]+">
+    </label>
+
+    <label for="firstname">FIRST NAME*:
+    <input id="firstname" name="firstname" type="text" required pattern="[a-zA-Z]+">
+    </label>
+
+    <label for="middlename">MIDDLE NAME*:
+    <input id="middlename" name="middlename" type="text" required pattern="[a-zA-Z]+">
+    </label>
+<br>
+    <label for="email">Email:
+    <input id="email" name="email" type="address">
+    </label>
+    <label for="address">Phone Number*:
+    <input id="phone" name="phone" type="tel" placeholdr="(###)###-####" maxlength="10" required>
+    </label>
+    <br>
+    <label for="address">Address*:
+    <input id="address" name="address" type="text" required>
+    </label>
+    <br>
+    <label for="address">Address 2 (Optional):
+    <input id="line2" name="line2" type="text">
+    </label>
+    <br>
+    <label for="address">City*:   
+    <input id="city" name="city" type="text" required>
+    </label>
+    <label for="address">State*:  
+    <input id="state" name="state" type="text" required>
+    </label>
+    <label for="address">Zip Code*:
+    <input id="zip" name="zip" type="number" maxlength="5" required>
+    </label>
+    <br>
+
+    <label for="dob">DOB*:</label>
+    <input type="date" id="dob" name="dob">
+    <br>
+
+    <label for="ssn">SSN#*:</label>
+    <input type="tel" id="ssn" name="ssn" placeholder="###-##-####" maxlength="11" required>
+    </div>
+<hr>
+<h4>Payment Authorization</h4>
+<hr>
+<div><!-- Payment -->
+  <section class="payment">
+        <label for="card">Please select your payment type:</label>
+        <select id="card" name="card">
+          <option>Payment</option>
+          <option value="mastercard">MasterCard</option>
+          <option value="visa">Visa</option>
+        </select>
+      </section>
+
+  <section class="expired">
+    <label for="exmonth">Expired Date:</label>
+    <select id="exmonth" name="month">
+      <option>Month</option>
+      <option value="01">January</option>
+      <option value="02">February</option>
+      <option value="03">March</option>
+      <option value="04">April</option>
+      <option value="05">May</option>
+      <option value="06">June</option>
+      <option value="07">July</option>
+      <option value="08">August</option>
+      <option value="09">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+    <label for="exyear"></label>
+    <select id="exyear" name="year">
+      <option>Year</option>
+      <option value="2018">2018</option>
+      <option value="2019">2019</option>
+      <option value="2020">2020</option>
+      <option value="2021">2021</option>
+      <option value="2022">2022</option>
+      <option value="2022">2023</option>
+      <option value="2022">2024</option>
+      <option value="2022">2025</option>
+      <option value="2022">2026</option>
+      <option value="2022">2027</option>
+      <option value="2022">2028</option>
+      <option value="2022">2029</option>
+      <option value="2022">2030</option>
+    </select>
+  </section>
+</div>
+
+  <label for="ccnumber">Credit card number:</label>
+  <input type="tel" id="ccnumber">
+
+<span><i>If there is a problem processing this payment, we would like to be able to reach you by phone. </i></span>
+<p>Card holder's signature*:<input type="text" required>
+Date*:<input type="tel" required></p>
+  
+  <section class="submission"> 
+          <input type="submit" value="Submit">
+  </section>
+<script src="script.js"></script>
+</form>
+</body>
+</html>

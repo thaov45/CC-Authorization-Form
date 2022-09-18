@@ -1,0 +1,33 @@
+body {
+    background: #FFF;
+    margin-top:0;
+    padding: 100px;
+    font-family: sans-serif;
+    line-height: 1.5;
+  }
+  
+  
+  hr {
+    height:2px;
+    border-width:0;
+    color:gray;
+    background-color:gray;
+  }
+  table, th, td {
+    width: auto;
+    border: .5px solid black;
+    border-collapse: collapse;
+  }
+  
+  input {
+    justify-content: center;
+  }
+  h4, h1{
+    text-align: center;
+    margin: 0;
+  }
+  
+  
+  
+  
+  
